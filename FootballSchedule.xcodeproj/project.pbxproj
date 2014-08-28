@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED2A18AB19AEAB840013B692 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2A18AA19AEAB840013B692 /* SenTestingKit.framework */; };
+		ED2A18AC19AEAB840013B692 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4B34E319AE7DD500FF635F /* CoreGraphics.framework */; };
+		ED2A18AD19AEAB840013B692 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4B34E519AE7DD500FF635F /* UIKit.framework */; };
+		ED2A18AE19AEAB840013B692 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4B34E119AE7DD500FF635F /* Foundation.framework */; };
+		ED2A18B419AEAB840013B692 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED2A18B219AEAB840013B692 /* InfoPlist.strings */; };
+		ED2A18B619AEAB840013B692 /* ExampleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = ED2A18B519AEAB840013B692 /* ExampleSpec.mm */; };
+		ED2A18B919AEAB840013B692 /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2A18B819AEAB840013B692 /* Cedar-iOS.framework */; };
 		ED4B34E219AE7DD500FF635F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4B34E119AE7DD500FF635F /* Foundation.framework */; };
 		ED4B34E419AE7DD500FF635F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4B34E319AE7DD500FF635F /* CoreGraphics.framework */; };
 		ED4B34E619AE7DD500FF635F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4B34E519AE7DD500FF635F /* UIKit.framework */; };
@@ -32,6 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED2A18A919AEAB840013B692 /* Specs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED2A18AA19AEAB840013B692 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		ED2A18B119AEAB840013B692 /* Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
+		ED2A18B319AEAB840013B692 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ED2A18B519AEAB840013B692 /* ExampleSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleSpec.mm; sourceTree = "<group>"; };
+		ED2A18B719AEAB840013B692 /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
+		ED2A18B819AEAB840013B692 /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
+		ED2A18BA19AEAB840013B692 /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
 		ED4B34DE19AE7DD500FF635F /* FootballSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4B34E119AE7DD500FF635F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ED4B34E319AE7DD500FF635F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -51,6 +66,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		ED2A18A519AEAB840013B692 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED2A18AC19AEAB840013B692 /* CoreGraphics.framework in Frameworks */,
+				ED2A18AD19AEAB840013B692 /* UIKit.framework in Frameworks */,
+				ED2A18B919AEAB840013B692 /* Cedar-iOS.framework in Frameworks */,
+				ED2A18AB19AEAB840013B692 /* SenTestingKit.framework in Frameworks */,
+				ED2A18AE19AEAB840013B692 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ED4B34DB19AE7DD500FF635F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -74,11 +101,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED2A18AF19AEAB840013B692 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				ED2A18B519AEAB840013B692 /* ExampleSpec.mm */,
+				ED2A18B719AEAB840013B692 /* Rakefile */,
+				ED2A18B819AEAB840013B692 /* Cedar-iOS.framework */,
+				ED2A18B019AEAB840013B692 /* Supporting Files */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		ED2A18B019AEAB840013B692 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED2A18B119AEAB840013B692 /* Specs-Info.plist */,
+				ED2A18B219AEAB840013B692 /* InfoPlist.strings */,
+				ED2A18BA19AEAB840013B692 /* Specs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		ED4B34D519AE7DD500FF635F = {
 			isa = PBXGroup;
 			children = (
 				ED4B34E719AE7DD500FF635F /* FootballSchedule */,
 				ED4B350019AE7DD500FF635F /* FootballScheduleTests */,
+				ED2A18AF19AEAB840013B692 /* Specs */,
 				ED4B34E019AE7DD500FF635F /* Frameworks */,
 				ED4B34DF19AE7DD500FF635F /* Products */,
 			);
@@ -89,6 +138,7 @@
 			children = (
 				ED4B34DE19AE7DD500FF635F /* FootballSchedule.app */,
 				ED4B34F919AE7DD500FF635F /* FootballScheduleTests.xctest */,
+				ED2A18A919AEAB840013B692 /* Specs.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +150,7 @@
 				ED4B34E319AE7DD500FF635F /* CoreGraphics.framework */,
 				ED4B34E519AE7DD500FF635F /* UIKit.framework */,
 				ED4B34FA19AE7DD500FF635F /* XCTest.framework */,
+				ED2A18AA19AEAB840013B692 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -147,6 +198,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		ED2A18A819AEAB840013B692 /* Specs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED2A18BD19AEAB840013B692 /* Build configuration list for PBXNativeTarget "Specs" */;
+			buildPhases = (
+				ED2A18A419AEAB840013B692 /* Sources */,
+				ED2A18A519AEAB840013B692 /* Frameworks */,
+				ED2A18A619AEAB840013B692 /* Resources */,
+				ED2A18A719AEAB840013B692 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Specs;
+			productName = Specs;
+			productReference = ED2A18A919AEAB840013B692 /* Specs.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		ED4B34DD19AE7DD500FF635F /* FootballSchedule */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED4B350A19AE7DD500FF635F /* Build configuration list for PBXNativeTarget "FootballSchedule" */;
@@ -209,11 +278,20 @@
 			targets = (
 				ED4B34DD19AE7DD500FF635F /* FootballSchedule */,
 				ED4B34F819AE7DD500FF635F /* FootballScheduleTests */,
+				ED2A18A819AEAB840013B692 /* Specs */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		ED2A18A619AEAB840013B692 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED2A18B419AEAB840013B692 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ED4B34DC19AE7DD500FF635F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -233,7 +311,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		ED2A18A719AEAB840013B692 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		ED2A18A419AEAB840013B692 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED2A18B619AEAB840013B692 /* ExampleSpec.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ED4B34DA19AE7DD500FF635F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -262,6 +364,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		ED2A18B219AEAB840013B692 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED2A18B319AEAB840013B692 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		ED4B34EA19AE7DD500FF635F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -281,6 +391,58 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		ED2A18BB19AEAB840013B692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FootballSchedule.app/FootballSchedule";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/Specs/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Specs/Specs-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		ED2A18BC19AEAB840013B692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FootballSchedule.app/FootballSchedule";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/Specs/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
+				INFOPLIST_FILE = "Specs/Specs-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		ED4B350819AE7DD500FF635F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -420,6 +582,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		ED2A18BD19AEAB840013B692 /* Build configuration list for PBXNativeTarget "Specs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED2A18BB19AEAB840013B692 /* Debug */,
+				ED2A18BC19AEAB840013B692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		ED4B34D919AE7DD500FF635F /* Build configuration list for PBXProject "FootballSchedule" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -436,6 +606,7 @@
 				ED4B350C19AE7DD500FF635F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED4B350D19AE7DD500FF635F /* Build configuration list for PBXNativeTarget "FootballScheduleTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +615,7 @@
 				ED4B350F19AE7DD500FF635F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

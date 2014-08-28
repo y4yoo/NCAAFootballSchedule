@@ -29,12 +29,22 @@
       buildConfiguration = "Debug">
       <Testables>
          <TestableReference
-            skipped = "NO">
+            skipped = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "ED4B34F819AE7DD500FF635F"
                BuildableName = "FootballScheduleTests.xctest"
                BlueprintName = "FootballScheduleTests"
+               ReferencedContainer = "container:FootballSchedule.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "ED2A18A819AEAB840013B692"
+               BuildableName = "Specs.octest"
+               BlueprintName = "Specs"
                ReferencedContainer = "container:FootballSchedule.xcodeproj">
             </BuildableReference>
          </TestableReference>
