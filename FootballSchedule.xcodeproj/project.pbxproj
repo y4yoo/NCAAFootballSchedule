@@ -26,6 +26,9 @@
 		ED4B34FD19AE7DD500FF635F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4B34E519AE7DD500FF635F /* UIKit.framework */; };
 		ED4B350519AE7DD500FF635F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED4B350319AE7DD500FF635F /* InfoPlist.strings */; };
 		ED4B350719AE7DD500FF635F /* FootballScheduleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4B350619AE7DD500FF635F /* FootballScheduleTests.m */; };
+		EDAF699F19AEC96A002A65FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDAF699E19AEC96A002A65FA /* Main.storyboard */; };
+		EDAF69A219AED026002A65FA /* ScheduleListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAF69A119AED026002A65FA /* ScheduleListTableViewController.m */; };
+		EDAF69A519AEDC6B002A65FA /* ScheduledGame.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAF69A419AEDC6B002A65FA /* ScheduledGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,11 @@
 		ED4B350219AE7DD500FF635F /* FootballScheduleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FootballScheduleTests-Info.plist"; sourceTree = "<group>"; };
 		ED4B350419AE7DD500FF635F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ED4B350619AE7DD500FF635F /* FootballScheduleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FootballScheduleTests.m; sourceTree = "<group>"; };
+		EDAF699E19AEC96A002A65FA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EDAF69A019AED026002A65FA /* ScheduleListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleListTableViewController.h; sourceTree = "<group>"; };
+		EDAF69A119AED026002A65FA /* ScheduleListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleListTableViewController.m; sourceTree = "<group>"; };
+		EDAF69A319AEDC6B002A65FA /* ScheduledGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScheduledGame.h; path = ../ScheduledGame.h; sourceTree = "<group>"; };
+		EDAF69A419AEDC6B002A65FA /* ScheduledGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScheduledGame.m; path = ../ScheduledGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,8 +166,13 @@
 		ED4B34E719AE7DD500FF635F /* FootballSchedule */ = {
 			isa = PBXGroup;
 			children = (
+				EDAF69A319AEDC6B002A65FA /* ScheduledGame.h */,
+				EDAF69A419AEDC6B002A65FA /* ScheduledGame.m */,
 				ED4B34F019AE7DD500FF635F /* AppDelegate.h */,
 				ED4B34F119AE7DD500FF635F /* AppDelegate.m */,
+				EDAF699E19AEC96A002A65FA /* Main.storyboard */,
+				EDAF69A019AED026002A65FA /* ScheduleListTableViewController.h */,
+				EDAF69A119AED026002A65FA /* ScheduleListTableViewController.m */,
 				ED4B34F319AE7DD500FF635F /* Images.xcassets */,
 				ED4B34E819AE7DD500FF635F /* Supporting Files */,
 			);
@@ -296,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDAF699F19AEC96A002A65FA /* Main.storyboard in Resources */,
 				ED4B34EC19AE7DD500FF635F /* InfoPlist.strings in Resources */,
 				ED4B34F419AE7DD500FF635F /* Images.xcassets in Resources */,
 			);
@@ -341,6 +355,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED4B34F219AE7DD500FF635F /* AppDelegate.m in Sources */,
+				EDAF69A519AEDC6B002A65FA /* ScheduledGame.m in Sources */,
+				EDAF69A219AED026002A65FA /* ScheduleListTableViewController.m in Sources */,
 				ED4B34EE19AE7DD500FF635F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -589,6 +605,7 @@
 				ED2A18BC19AEAB840013B692 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED4B34D919AE7DD500FF635F /* Build configuration list for PBXProject "FootballSchedule" */ = {
 			isa = XCConfigurationList;
